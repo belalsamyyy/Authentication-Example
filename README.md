@@ -1,7 +1,5 @@
 # Authentication-Example
 
-## Example
-
 ```swift 
 func validateFields() {
         do {
