@@ -15,6 +15,10 @@
 		413BBF7326EC8754009E6736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413BBF7126EC8754009E6736 /* LaunchScreen.storyboard */; };
 		413BBF7C26EC894D009E6736 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF7B26EC894D009E6736 /* Constants.swift */; };
 		413BBF7E26EC89C8009E6736 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF7D26EC89C8009E6736 /* UserDefaultsManager.swift */; };
+		413BBF8026EC8E4A009E6736 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF7F26EC8E4A009E6736 /* Validators.swift */; };
+		413BBF8826ECB8E9009E6736 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF8726ECB8E9009E6736 /* UITextField+Extensions.swift */; };
+		413BBF8A26ECB8F6009E6736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF8926ECB8F6009E6736 /* String+Extensions.swift */; };
+		413BBF8C26ECBDCA009E6736 /* UIViewController+simpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BBF8B26ECBDCA009E6736 /* UIViewController+simpleAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		413BBF7426EC8754009E6736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413BBF7B26EC894D009E6736 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		413BBF7D26EC89C8009E6736 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		413BBF7F26EC8E4A009E6736 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		413BBF8726ECB8E9009E6736 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		413BBF8926ECB8F6009E6736 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		413BBF8B26ECBDCA009E6736 /* UIViewController+simpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+simpleAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +71,9 @@
 				413BBF6626EC8753009E6736 /* AppDelegate.swift */,
 				413BBF6826EC8753009E6736 /* SceneDelegate.swift */,
 				413BBF6A26EC8753009E6736 /* ViewController.swift */,
+				413BBF8126EC927A009E6736 /* Validation */,
 				413BBF7A26EC8930009E6736 /* Utilities */,
+				413BBF8626ECB8C8009E6736 /* Extensions */,
 				413BBF6C26EC8753009E6736 /* Main.storyboard */,
 				413BBF6F26EC8754009E6736 /* Assets.xcassets */,
 				413BBF7126EC8754009E6736 /* LaunchScreen.storyboard */,
@@ -79,6 +89,24 @@
 				413BBF7B26EC894D009E6736 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		413BBF8126EC927A009E6736 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				413BBF7F26EC8E4A009E6736 /* Validators.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		413BBF8626ECB8C8009E6736 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				413BBF8726ECB8E9009E6736 /* UITextField+Extensions.swift */,
+				413BBF8926ECB8F6009E6736 /* String+Extensions.swift */,
+				413BBF8B26ECBDCA009E6736 /* UIViewController+simpleAlert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413BBF8C26ECBDCA009E6736 /* UIViewController+simpleAlert.swift in Sources */,
 				413BBF6B26EC8753009E6736 /* ViewController.swift in Sources */,
+				413BBF8826ECB8E9009E6736 /* UITextField+Extensions.swift in Sources */,
 				413BBF7E26EC89C8009E6736 /* UserDefaultsManager.swift in Sources */,
+				413BBF8A26ECB8F6009E6736 /* String+Extensions.swift in Sources */,
 				413BBF6726EC8753009E6736 /* AppDelegate.swift in Sources */,
 				413BBF6926EC8753009E6736 /* SceneDelegate.swift in Sources */,
+				413BBF8026EC8E4A009E6736 /* Validators.swift in Sources */,
 				413BBF7C26EC894D009E6736 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

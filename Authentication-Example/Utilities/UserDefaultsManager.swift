@@ -7,6 +7,8 @@
 
 import Foundation
 
+var Defaults = UserDefaultsManager.shared
+
 struct UserDefaultsManager {
     
     //MARK: - singleton manager
@@ -37,6 +39,18 @@ struct UserDefaultsManager {
                 return "token not existing"
             }
             return def.object(forKey: UserDefaultsKeys.token) as! String
+        }
+    }
+    
+    // computed propery for userName
+    var userName: String {
+        set {
+            def.set(newValue, forKey: UserDefaultsKeys.userName)
+        } get {
+            guard def.object(forKey: UserDefaultsKeys.userName) != nil else {
+                return "userName not existing"
+            }
+            return def.object(forKey: UserDefaultsKeys.userName) as! String
         }
     }
     
