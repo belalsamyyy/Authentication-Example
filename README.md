@@ -2,20 +2,19 @@
 
 ```swift 
 func validateFields() {
-        do {
-            let name = try userName_tf.validate(type: .required("User Name"))
-            let email = try email_tf.validate(type: .email)
-            let password = try password_tf.validate(type: .password)
-            _ = try confirmPasswrod_tf.validate(type: .confirm(password_tf))
-            
-            self.simpleAlert(title: "Success", message: "you registerd Successfully !")
-            save(name: name, email: email, password: password) // save in userDefaults
-            
-        } catch(let error) {
-            //self.activityIndicator.stopAnimating()
-            self.simpleAlert(title: "Error", message: (error as! ValidationError).message)
-        }
-    }
+   do {
+        let name = try userName_tf.validate(type: .required("User Name"))
+        let email = try email_tf.validate(type: .email)
+        let password = try password_tf.validate(type: .password)
+         _ = try confirmPasswrod_tf.validate(type: .confirm(password_tf))
+
+        self.simpleAlert(title: "Success", message: "you registerd Successfully !")
+        save(name: name, email: email, password: password) // save in userDefaults
+
+   } catch(let error) {
+        self.simpleAlert(title: "Error", message: (error as! ValidationError).message)
+   }
+}
 ```
 
 ## Author
