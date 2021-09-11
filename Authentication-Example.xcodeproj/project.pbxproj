@@ -71,12 +71,12 @@
 				413BBF6626EC8753009E6736 /* AppDelegate.swift */,
 				413BBF6826EC8753009E6736 /* SceneDelegate.swift */,
 				413BBF6A26EC8753009E6736 /* ViewController.swift */,
-				413BBF8126EC927A009E6736 /* Validation */,
+				413BBF7126EC8754009E6736 /* LaunchScreen.storyboard */,
+				413BBF6C26EC8753009E6736 /* Main.storyboard */,
 				413BBF7A26EC8930009E6736 /* Utilities */,
 				413BBF8626ECB8C8009E6736 /* Extensions */,
-				413BBF6C26EC8753009E6736 /* Main.storyboard */,
+				413BBF8126EC927A009E6736 /* Helpers */,
 				413BBF6F26EC8754009E6736 /* Assets.xcassets */,
-				413BBF7126EC8754009E6736 /* LaunchScreen.storyboard */,
 				413BBF7426EC8754009E6736 /* Info.plist */,
 			);
 			path = "Authentication-Example";
@@ -85,18 +85,18 @@
 		413BBF7A26EC8930009E6736 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				413BBF7D26EC89C8009E6736 /* UserDefaultsManager.swift */,
 				413BBF7B26EC894D009E6736 /* Constants.swift */,
+				413BBF7D26EC89C8009E6736 /* UserDefaultsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		413BBF8126EC927A009E6736 /* Validation */ = {
+		413BBF8126EC927A009E6736 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				413BBF7F26EC8E4A009E6736 /* Validators.swift */,
 			);
-			path = Validation;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		413BBF8626ECB8C8009E6736 /* Extensions */ = {
